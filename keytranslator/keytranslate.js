@@ -40,7 +40,7 @@ function translateKey(from, to, song) {
         letter = letters[i];
         index = fromKey.indexOf(letter);
         if (index === -1){
-            return "unknown letter "+letter+" in "+from+" key";
+            return "unknown letter "+letter+" in "+from+" key. Allowed letters "+fromKey.join();
         }
         response +=toKey[index]+" ";
     }
